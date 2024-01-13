@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ccc;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.box{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 2px 4px 4px;
+    background-color:white;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+}
+
+b{
+    font-size: 20px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat( auto-fit ,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input,h2, select, textarea{
+    padding: 6px 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:focus{
+    outline-color: red;
+}
+
+.btn{
+    display: flex;
+
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: orange;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color:brown;
+    border: 2px solid black;
+    color: white;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+
+}   
+
+.main-data{
+    grid-column: 1/ span 2;
+    
+}
+
+.main-data textarea{
+    width: 100%;
+}
+
+@media(max-width:650px){
+    .main-data{
+        grid-column: 1/ span 1;
+        
+    }
+}
